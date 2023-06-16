@@ -7,18 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B12A7602A2059A8003B3F6B /* ReceiptShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12A75F2A2059A6003B3F6B /* ReceiptShape.swift */; };
+		3B23A0742A1FFF17007FE816 /* EditItemPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23A0732A1FFF17007FE816 /* EditItemPopover.swift */; };
+		3B23A0762A201804007FE816 /* MapSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23A0752A201804007FE816 /* MapSearchView.swift */; };
+		3B36796F2A25233B00B8AAE9 /* ImageToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36796E2A25233B00B8AAE9 /* ImageToText.swift */; };
+		3BC32AD92A1ED0F200F3D400 /* AICameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC32AD82A1ED0F200F3D400 /* AICameraView.swift */; };
+		3BC32ADB2A1F0B0900F3D400 /* OCRHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC32ADA2A1F0B0900F3D400 /* OCRHelper.swift */; };
+		3BC940722A1C36B50049D114 /* AddItemPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC940712A1C36B50049D114 /* AddItemPopover.swift */; };
+		3BC940762A1C3A420049D114 /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC940752A1C3A420049D114 /* MiniMapView.swift */; };
+		3BC9407A2A1C7F720049D114 /* ReceiptListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC940792A1C7F720049D114 /* ReceiptListView.swift */; };
+		3BCB86672A1B1EC9001BE13A /* ReceiptEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB86662A1B1EC9001BE13A /* ReceiptEditorView.swift */; };
+		3BD46F9D2A1C05A3006BDE3C /* NamePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD46F9C2A1C05A3006BDE3C /* NamePopover.swift */; };
+		3BD7D7CE2A39A9C900094B83 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7D7CD2A39A9C900094B83 /* AspectVGrid.swift */; };
+		3BE5942C2A1C21D100B5002D /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5942B2A1C21D000B5002D /* ReceiptView.swift */; };
 		3BFB8F8B2A1AE7D500B370A8 /* FairShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB8F8A2A1AE7D500B370A8 /* FairShareApp.swift */; };
-		3BFB8F8D2A1AE7D500B370A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB8F8C2A1AE7D500B370A8 /* ContentView.swift */; };
+		3BFB8F8D2A1AE7D500B370A8 /* FairShareHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB8F8C2A1AE7D500B370A8 /* FairShareHomeView.swift */; };
 		3BFB8F8F2A1AE7D900B370A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB8F8E2A1AE7D900B370A8 /* Assets.xcassets */; };
 		3BFB8F922A1AE7D900B370A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB8F912A1AE7D900B370A8 /* Preview Assets.xcassets */; };
+		3BFB8F992A1AE93B00B370A8 /* ReceiptScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB8F982A1AE93B00B370A8 /* ReceiptScanningView.swift */; };
+		3BFB8F9B2A1B173900B370A8 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB8F9A2A1B173900B370A8 /* Receipt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B12A75F2A2059A6003B3F6B /* ReceiptShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptShape.swift; sourceTree = "<group>"; };
+		3B23A0732A1FFF17007FE816 /* EditItemPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemPopover.swift; sourceTree = "<group>"; };
+		3B23A0752A201804007FE816 /* MapSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchView.swift; sourceTree = "<group>"; };
+		3B36796E2A25233B00B8AAE9 /* ImageToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToText.swift; sourceTree = "<group>"; };
+		3BC32AD82A1ED0F200F3D400 /* AICameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICameraView.swift; sourceTree = "<group>"; };
+		3BC32ADA2A1F0B0900F3D400 /* OCRHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRHelper.swift; sourceTree = "<group>"; };
+		3BC940712A1C36B50049D114 /* AddItemPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemPopover.swift; sourceTree = "<group>"; };
+		3BC940752A1C3A420049D114 /* MiniMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
+		3BC940792A1C7F720049D114 /* ReceiptListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListView.swift; sourceTree = "<group>"; };
+		3BCB86662A1B1EC9001BE13A /* ReceiptEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptEditorView.swift; sourceTree = "<group>"; };
+		3BD46F9C2A1C05A3006BDE3C /* NamePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePopover.swift; sourceTree = "<group>"; };
+		3BD7D7CD2A39A9C900094B83 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		3BE5942B2A1C21D000B5002D /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
 		3BFB8F872A1AE7D500B370A8 /* FairShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FairShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFB8F8A2A1AE7D500B370A8 /* FairShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairShareApp.swift; sourceTree = "<group>"; };
-		3BFB8F8C2A1AE7D500B370A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BFB8F8C2A1AE7D500B370A8 /* FairShareHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairShareHomeView.swift; sourceTree = "<group>"; };
 		3BFB8F8E2A1AE7D900B370A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BFB8F912A1AE7D900B370A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BFB8F982A1AE93B00B370A8 /* ReceiptScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScanningView.swift; sourceTree = "<group>"; };
+		3BFB8F9A2A1B173900B370A8 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +81,25 @@
 		3BFB8F892A1AE7D500B370A8 /* FairShare */ = {
 			isa = PBXGroup;
 			children = (
+				3BD7D7CD2A39A9C900094B83 /* AspectVGrid.swift */,
+				3B23A0752A201804007FE816 /* MapSearchView.swift */,
 				3BFB8F8A2A1AE7D500B370A8 /* FairShareApp.swift */,
-				3BFB8F8C2A1AE7D500B370A8 /* ContentView.swift */,
+				3BFB8F8C2A1AE7D500B370A8 /* FairShareHomeView.swift */,
+				3BFB8F982A1AE93B00B370A8 /* ReceiptScanningView.swift */,
+				3BCB86662A1B1EC9001BE13A /* ReceiptEditorView.swift */,
 				3BFB8F8E2A1AE7D900B370A8 /* Assets.xcassets */,
 				3BFB8F902A1AE7D900B370A8 /* Preview Content */,
+				3BFB8F9A2A1B173900B370A8 /* Receipt.swift */,
+				3BD46F9C2A1C05A3006BDE3C /* NamePopover.swift */,
+				3BE5942B2A1C21D000B5002D /* ReceiptView.swift */,
+				3BC940712A1C36B50049D114 /* AddItemPopover.swift */,
+				3BC940752A1C3A420049D114 /* MiniMapView.swift */,
+				3BC940792A1C7F720049D114 /* ReceiptListView.swift */,
+				3BC32AD82A1ED0F200F3D400 /* AICameraView.swift */,
+				3B36796E2A25233B00B8AAE9 /* ImageToText.swift */,
+				3BC32ADA2A1F0B0900F3D400 /* OCRHelper.swift */,
+				3B23A0732A1FFF17007FE816 /* EditItemPopover.swift */,
+				3B12A75F2A2059A6003B3F6B /* ReceiptShape.swift */,
 			);
 			path = FairShare;
 			sourceTree = "<group>";
@@ -137,8 +182,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFB8F8D2A1AE7D500B370A8 /* ContentView.swift in Sources */,
+				3BD7D7CE2A39A9C900094B83 /* AspectVGrid.swift in Sources */,
+				3BFB8F8D2A1AE7D500B370A8 /* FairShareHomeView.swift in Sources */,
 				3BFB8F8B2A1AE7D500B370A8 /* FairShareApp.swift in Sources */,
+				3BC940722A1C36B50049D114 /* AddItemPopover.swift in Sources */,
+				3BC32ADB2A1F0B0900F3D400 /* OCRHelper.swift in Sources */,
+				3BC940762A1C3A420049D114 /* MiniMapView.swift in Sources */,
+				3BFB8F9B2A1B173900B370A8 /* Receipt.swift in Sources */,
+				3B23A0742A1FFF17007FE816 /* EditItemPopover.swift in Sources */,
+				3B36796F2A25233B00B8AAE9 /* ImageToText.swift in Sources */,
+				3BFB8F992A1AE93B00B370A8 /* ReceiptScanningView.swift in Sources */,
+				3BE5942C2A1C21D100B5002D /* ReceiptView.swift in Sources */,
+				3BC9407A2A1C7F720049D114 /* ReceiptListView.swift in Sources */,
+				3BCB86672A1B1EC9001BE13A /* ReceiptEditorView.swift in Sources */,
+				3BD46F9D2A1C05A3006BDE3C /* NamePopover.swift in Sources */,
+				3BC32AD92A1ED0F200F3D400 /* AICameraView.swift in Sources */,
+				3B23A0762A201804007FE816 /* MapSearchView.swift in Sources */,
+				3B12A7602A2059A8003B3F6B /* ReceiptShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +330,7 @@
 				DEVELOPMENT_TEAM = NXFKQWP4Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uses the camera to read receipts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +360,7 @@
 				DEVELOPMENT_TEAM = NXFKQWP4Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uses the camera to read receipts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

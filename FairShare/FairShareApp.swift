@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FairShareApp: App {
+    
+    @StateObject var receiptManager = ReceiptManager()
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        return WindowGroup {
+            FairShareHomeView().environmentObject(receiptManager)
         }
     }
 }
