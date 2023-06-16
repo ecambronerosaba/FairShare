@@ -130,7 +130,7 @@ struct Receipt: Hashable, Identifiable, Encodable, Decodable {
 }
 
 class ReceiptManager: ObservableObject {
-    @Published var receipts: Array<Receipt> = [receipt1, receipt2, receipt3, receipt4, receipt5, receipt6] {
+    @Published var receipts: Array<Receipt> = [receipt1, receipt2, receipt3] {
         didSet {
             saveReceipts()
         }

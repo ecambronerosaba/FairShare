@@ -99,6 +99,7 @@ func classifyReceiptText(_ textArray: [String]) -> [String: [String]] {
             let tagValue = tag.rawValue.lowercased()
             let word = String(text[range])
             
+            print("Word\(word): \(tagValue)")
             
             if tagValue == "number" || tagValue == "money" {
                 if result["Price"] == nil {
@@ -106,7 +107,7 @@ func classifyReceiptText(_ textArray: [String]) -> [String: [String]] {
                 } else {
                     result["Price"]?.append(word)
                 }
-            } else if tagValue == "whitespace" || tagValue == "noun" {
+            } else if tagValue == "whitespace" {
                 let previousRange: Range<String.Index>
                 if range.lowerBound != text.startIndex {
                     previousRange = text.index(range.lowerBound, offsetBy: -1)..<range.lowerBound

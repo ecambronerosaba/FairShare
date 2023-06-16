@@ -18,7 +18,6 @@
 		3BC9407A2A1C7F720049D114 /* ReceiptListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC940792A1C7F720049D114 /* ReceiptListView.swift */; };
 		3BCB86672A1B1EC9001BE13A /* ReceiptEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB86662A1B1EC9001BE13A /* ReceiptEditorView.swift */; };
 		3BD46F9D2A1C05A3006BDE3C /* NamePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD46F9C2A1C05A3006BDE3C /* NamePopover.swift */; };
-		3BD7D7CE2A39A9C900094B83 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7D7CD2A39A9C900094B83 /* AspectVGrid.swift */; };
 		3BE5942C2A1C21D100B5002D /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5942B2A1C21D000B5002D /* ReceiptView.swift */; };
 		3BFB8F8B2A1AE7D500B370A8 /* FairShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB8F8A2A1AE7D500B370A8 /* FairShareApp.swift */; };
 		3BFB8F8D2A1AE7D500B370A8 /* FairShareHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB8F8C2A1AE7D500B370A8 /* FairShareHomeView.swift */; };
@@ -40,7 +39,6 @@
 		3BC940792A1C7F720049D114 /* ReceiptListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListView.swift; sourceTree = "<group>"; };
 		3BCB86662A1B1EC9001BE13A /* ReceiptEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptEditorView.swift; sourceTree = "<group>"; };
 		3BD46F9C2A1C05A3006BDE3C /* NamePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePopover.swift; sourceTree = "<group>"; };
-		3BD7D7CD2A39A9C900094B83 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
 		3BE5942B2A1C21D000B5002D /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
 		3BFB8F872A1AE7D500B370A8 /* FairShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FairShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFB8F8A2A1AE7D500B370A8 /* FairShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairShareApp.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 		3BFB8F892A1AE7D500B370A8 /* FairShare */ = {
 			isa = PBXGroup;
 			children = (
-				3BD7D7CD2A39A9C900094B83 /* AspectVGrid.swift */,
 				3B23A0752A201804007FE816 /* MapSearchView.swift */,
 				3BFB8F8A2A1AE7D500B370A8 /* FairShareApp.swift */,
 				3BFB8F8C2A1AE7D500B370A8 /* FairShareHomeView.swift */,
@@ -182,7 +179,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BD7D7CE2A39A9C900094B83 /* AspectVGrid.swift in Sources */,
 				3BFB8F8D2A1AE7D500B370A8 /* FairShareHomeView.swift in Sources */,
 				3BFB8F8B2A1AE7D500B370A8 /* FairShareApp.swift in Sources */,
 				3BC940722A1C36B50049D114 /* AddItemPopover.swift in Sources */,

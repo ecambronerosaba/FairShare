@@ -74,67 +74,51 @@ struct ReceiptView: View {
                 Image(systemName: "doc.on.doc")
             }
     }
-    
-//    private var itemScrollingInfo: some View {
-//        AspectVGrid(items: receipt.totals.keys.sorted(), aspectRatio: 1/3) {person in
-//            if let amount = receipt.totals[person] {
-//                makeTextForPerson(amount, person)
-//            }
-//        }
-//    }
-//
-//
-    private func makeTextForPerson(_ amount: Float, _ person: String) -> some View {
-            Text("\(person): $\(amount, specifier: "%.2f")")
-                .padding(.horizontal)
-                .contextMenu {
-                    Button(action: {
-                        UIPasteboard.general.string = "Hey \(person), you owe me $\(String(format: "%.2f", amount)) from our meal at \(receipt.name)"
-                    }) {
-                        Text("Copy message")
-                        Image(systemName: "doc.on.doc")
-                    }
-                }
-    }
-    
+        
     private var itemScrollingInfo: some View {
         ScrollView {
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
                 ForEach(receipt.totals.keys.sorted(), id: \.self) { person in
                     if let amount = receipt.totals[person] {
-                        makeTextForPerson(amount, person)
-                            .font(.system(size: 40))
+                        Text("\(person): $\(amount, specifier: "%.2f")")
+                            .padding(.horizontal)
+                            .contextMenu {
+                                Button(action: {
+                                    UIPasteboard.general.string = "Hey \(person), you owe me $\(String(format: "%.2f", amount)) from our meal at \(receipt.name)"
+                                }) {
+                                    Text("Copy message: Hey \(person), you owe me $\(String(format: "%.2f", amount)) from our meal at \(receipt.name)")
+                                    Image(systemName: "doc.on.doc")
+                                }
+                            }
                     }
                 }
             }
         }
-        .frame(height: 300)
     }
     
     private var itemInformation: some View {
-            VStack {
-                Text("Items").font(.title)
-                ScrollView {
-                    ForEach(receipt.items, id: \.self) { item in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(item.name)
-                                    .font(.headline)
-                                Text("Payers: \(item.payers!.joined(separator: ", "))")
-                                    .font(.subheadline)
-                                
-                            }
-                            Spacer()
-                            Text("$\(item.cost, specifier: "%.2f")")
+        VStack {
+            Text("Items").font(.title)
+            ScrollView {
+                ForEach(receipt.items, id: \.self) { item in
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.name)
                                 .font(.headline)
+                            Text("Payers: \(item.payers!.joined(separator: ", "))")
+                                .font(.subheadline)
+                            
                         }
-                        .padding(.bottom, 5)
-                        .padding(.all, 5)
+                        Spacer()
+                        Text("$\(item.cost, specifier: "%.2f")")
+                            .font(.headline)
                     }
+                    .padding()
                 }
+            }
         }
+        
     }
-
     
     private var imageAndMap: some View {
         HStack {
@@ -179,9 +163,12 @@ struct ReceiptView: View {
     }
     
     private var zoomGesture: some Gesture {
-        TapGesture(count: 2)
-            .onEnded { tap in
-                if zoom == 1 {
+        MagnificationGesture()
+            .updating($gestureZoom) { inMotionPinchScale, gestureZoom, _ in
+                gestureZoom = inMotionPinchScale
+            }
+            .onEnded { endingPinchScale in
+                if endingPinchScale > 1.0 {
                     zoom = 4
                 }
                 else {
@@ -194,9 +181,8 @@ struct ReceiptView: View {
 struct ReceiptView_Previews: PreviewProvider {
     static var hamburger = ReceiptItem(payers: ["John"], cost: 15, name: "Hamburger")
     static var hotdog = ReceiptItem(payers: ["Jane"], cost: 10, name: "Hotdog")
-    static var hotdog2 = ReceiptItem(payers: ["Jane", "George"], cost: 10, name: "Hotdog")
     static var sharedApp = ReceiptItem(payers: ["John", "Jane"], cost: 20, name: "Shared App")
     static var previews: some View {
-        ReceiptView(receipt: Receipt(people: ["John", "Jane", "George"], tip: 0.20, tax: 0.07, isSplitEven: false, location: "1 Infinite Loop, Cupertino, CA", items: [hamburger, hotdog, sharedApp, hotdog2], name: "Zareen's")).environmentObject(ReceiptManager())
+        ReceiptView(receipt: Receipt(people: ["John", "Jane"], tip: 0.20, tax: 0.07, isSplitEven: false, location: "1 Infinite Loop, Cupertino, CA", items: [hamburger, hotdog, sharedApp], name: "Zareen's")).environmentObject(ReceiptManager())
     }
 }
